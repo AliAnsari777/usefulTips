@@ -8,7 +8,7 @@ import java.util.List;
 
 public class JSON {
 
-    void ConvertJsonToArray() {
+    static void ConvertJsonToArray() {
         String informationInJsonFormat = "students: [ " +
                 "{name: ali, class:programming, contact:546698745}, " +
                 "{name: max, class:algorithm, contact:1234587562}," +
@@ -29,9 +29,14 @@ public class JSON {
 
             students.add(student);
         }
+
+        for(Student s : students){
+            System.out.println(s.toString());
+            System.out.println();
+        }
     }
 
-    class Student{
+    static class Student{
         String name;
         String className;
         String contact;
@@ -58,6 +63,15 @@ public class JSON {
 
         public void setContact(String contact) {
             this.contact = contact;
+        }
+
+        @Override
+        public String toString() {
+            return "Student{" +
+                    "name='" + name + '\'' +
+                    ", className='" + className + '\'' +
+                    ", contact='" + contact + '\'' +
+                    '}';
         }
     }
 }
