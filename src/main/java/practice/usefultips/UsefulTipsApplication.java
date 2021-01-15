@@ -9,7 +9,7 @@ public class UsefulTipsApplication {
     public static void main(String[] args) {
         SpringApplication.run(UsefulTipsApplication.class, args);
 
-
+        JSON.ConvertJsonToArray();
     }
 
 }
