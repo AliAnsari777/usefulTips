@@ -1,4 +1,4 @@
-package practice.usefultips;
+package practice.usefultips.Rest;
 
 import org.springframework.http.HttpEntity;
 import org.springframework.web.client.RestTemplate;
